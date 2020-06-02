@@ -17,6 +17,8 @@
 # MAGIC %md
 # MAGIC ## Context
 # MAGIC In this notebook, we show how a simple data science problem (classification) could benefit from **Delta Lake** and **MLFlow** in order to bring reliability on your data and transparency in your insights. Specifically, we cover here some questions that any data practicitioner in financial services will have to comply from a model risk management perspective and how Databricks, as a unified data and analytics platform, can drastically help you reduce development-to-production time. 
+# MAGIC 
+# MAGIC We also want to show interaction with GitHub to run pre-commits hooks such as Black (code formatter) or flake8 (code style checker) to bring consistency in our deliverables.
 
 # COMMAND ----------
 
