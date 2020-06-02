@@ -18,7 +18,28 @@
 # MAGIC ## Context
 # MAGIC In this notebook, we show how a simple data science problem (classification) could benefit from **Delta Lake** and **MLFlow** in order to bring reliability on your data and transparency in your insights. Specifically, we cover here some questions that any data practicitioner in financial services will have to comply from a model risk management perspective and how Databricks, as a unified data and analytics platform, can drastically help you reduce development-to-production time. 
 # MAGIC 
-# MAGIC We also want to show interaction with GitHub to run pre-commits hooks such as Black (code formatter) or flake8 (code style checker) to bring consistency in our deliverables.
+# MAGIC We also want to show interaction with GitHub to run pre-commits hooks such as Black (code formatter) or flake8 (code style checker) to bring consistency in our deliverables. This assume we have created a file `.pre-commit-config.yaml` as follows
+# MAGIC 
+# MAGIC ```
+# MAGIC repos:
+# MAGIC -   repo: https://github.com/asottile/seed-isort-config
+# MAGIC     rev: v1.9.3
+# MAGIC     hooks:
+# MAGIC     - id: seed-isort-config
+# MAGIC -   repo: https://github.com/pre-commit/mirrors-isort
+# MAGIC     rev: v4.3.21
+# MAGIC     hooks:
+# MAGIC     - id: isort
+# MAGIC -   repo: https://github.com/ambv/black
+# MAGIC     rev: stable
+# MAGIC     hooks:
+# MAGIC     - id: black
+# MAGIC       language_version: python3.6
+# MAGIC -   repo: https://github.com/pre-commit/pre-commit-hooks
+# MAGIC     rev: v2.3.0
+# MAGIC     hooks:
+# MAGIC     - id: flake8
+# MAGIC ```
 
 # COMMAND ----------
 
